@@ -13,8 +13,6 @@ import MapKit
 class ImagesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout, NSFetchedResultsControllerDelegate {
     
-    // 2:41:30
-    
     // MARK: Outlets
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -85,6 +83,8 @@ class ImagesVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
                     return
                 }
                 
+                self.noImagesLabel.isHidden = true
+                
                 for url in urls {
                     let image = Image(context: self.managedObjectContext)
                     image.imgUrl = url
@@ -112,8 +112,10 @@ class ImagesVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             try fetchController.performFetch()
             if isThereImages {
                 updateView(processing: false)
+                self.noImagesLabel.isHidden = true
             } else {
                 newCollectionButtonPressed(self)
+                self.noImagesLabel.isHidden = false
             }
         } catch {
             fatalError("Photos fetch error : \(error.localizedDescription)")
@@ -124,9 +126,11 @@ class ImagesVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         collectionView.isUserInteractionEnabled = !processing
         if processing {
             newCollectionButton.title = ""
+            newCollectionActivityIndicator.isHidden = false
             newCollectionActivityIndicator.startAnimating()
         } else {
             newCollectionActivityIndicator.stopAnimating()
+            newCollectionActivityIndicator.isHidden = true
             newCollectionButton.title = "New Collection"
         }
     }

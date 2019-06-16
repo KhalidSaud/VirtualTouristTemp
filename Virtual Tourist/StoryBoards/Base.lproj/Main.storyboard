@@ -76,7 +76,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="131" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ka-eb-N0K">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ka-eb-N0K" customClass="CustomImageCellView" customModule="Virtual_Tourist" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="131" height="122"/>
                                                 </imageView>
                                             </subviews>

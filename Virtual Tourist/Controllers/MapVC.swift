@@ -21,6 +21,11 @@ class MapVC: UIViewController, MKMapViewDelegate, NSFetchedResultsControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        setupFetchController()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setupFetchController()
     }
     
@@ -62,8 +67,15 @@ class MapVC: UIViewController, MKMapViewDelegate, NSFetchedResultsControllerDele
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        let pin = fetchController.fetchedObjects?.filter { $0.compare(coord: view.annotation!.coordinate) }.first!
-        performSegue(withIdentifier: "ToImagesView", sender: pin)
+        if let coord = view.annotation?.coordinate {
+            print("There is selected \(coord)")
+            let pin = fetchController.fetchedObjects?.filter { $0.compare(coord: coord) }.first
+            performSegue(withIdentifier: "ToImagesView", sender: pin)
+        } else {
+            print("There is NOT selected coord")
+            return
+        }
+        
     }
     
     @IBAction func longPress(_ sender: UILongPressGestureRecognizer) {
