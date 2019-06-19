@@ -18,10 +18,11 @@
 		E97E6E2122B4F06200D37B1B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2022B4F06200D37B1B /* DataController.swift */; };
 		E97E6E2522B4F36700D37B1B /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2422B4F36700D37B1B /* ImageExtension.swift */; };
 		E97E6E2722B4F42A00D37B1B /* PinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2622B4F42A00D37B1B /* PinExtension.swift */; };
-		E97E6E2922B4F5E600D37B1B /* UIViewControllerExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2822B4F5E600D37B1B /* UIViewControllerExtenstion.swift */; };
+		E97E6E2922B4F5E600D37B1B /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2822B4F5E600D37B1B /* UIViewController+ShowAlert.swift */; };
 		E97E6E2C22B4F6DA00D37B1B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2B22B4F6DA00D37B1B /* API.swift */; };
 		E97E6E2E22B4F71B00D37B1B /* ConstantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2D22B4F71B00D37B1B /* ConstantData.swift */; };
 		E97E6E3022B56DD700D37B1B /* CustomImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E6E2F22B56DD600D37B1B /* CustomImageCellView.swift */; };
+		E98F387822BA48B1002A5289 /* ImageVC+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F387722BA48B1002A5289 /* ImageVC+UICollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +39,11 @@
 		E97E6E2022B4F06200D37B1B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E97E6E2422B4F36700D37B1B /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		E97E6E2622B4F42A00D37B1B /* PinExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinExtension.swift; sourceTree = "<group>"; };
-		E97E6E2822B4F5E600D37B1B /* UIViewControllerExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtenstion.swift; sourceTree = "<group>"; };
+		E97E6E2822B4F5E600D37B1B /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
 		E97E6E2B22B4F6DA00D37B1B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E97E6E2D22B4F71B00D37B1B /* ConstantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantData.swift; sourceTree = "<group>"; };
 		E97E6E2F22B56DD600D37B1B /* CustomImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageCellView.swift; sourceTree = "<group>"; };
+		E98F387722BA48B1002A5289 /* ImageVC+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageVC+UICollectionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,8 @@
 			children = (
 				E97E6E2422B4F36700D37B1B /* ImageExtension.swift */,
 				E97E6E2622B4F42A00D37B1B /* PinExtension.swift */,
-				E97E6E2822B4F5E600D37B1B /* UIViewControllerExtenstion.swift */,
+				E97E6E2822B4F5E600D37B1B /* UIViewController+ShowAlert.swift */,
+				E98F387722BA48B1002A5289 /* ImageVC+UICollectionView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,13 +226,14 @@
 			files = (
 				E97E6E3022B56DD700D37B1B /* CustomImageCellView.swift in Sources */,
 				E97E6E2C22B4F6DA00D37B1B /* API.swift in Sources */,
+				E98F387822BA48B1002A5289 /* ImageVC+UICollectionView.swift in Sources */,
 				E97E6E2E22B4F71B00D37B1B /* ConstantData.swift in Sources */,
 				E97E6E2122B4F06200D37B1B /* DataController.swift in Sources */,
 				E97E6E1A22B4305600D37B1B /* ImagesVC.swift in Sources */,
 				E97E6E1F22B4EE6200D37B1B /* VirtualTouristModel.xcdatamodeld in Sources */,
 				E97E6E0222B42F1B00D37B1B /* MapVC.swift in Sources */,
 				E97E6E0022B42F1B00D37B1B /* AppDelegate.swift in Sources */,
-				E97E6E2922B4F5E600D37B1B /* UIViewControllerExtenstion.swift in Sources */,
+				E97E6E2922B4F5E600D37B1B /* UIViewController+ShowAlert.swift in Sources */,
 				E97E6E2722B4F42A00D37B1B /* PinExtension.swift in Sources */,
 				E97E6E1C22B438E600D37B1B /* ImageCell.swift in Sources */,
 				E97E6E2522B4F36700D37B1B /* ImageExtension.swift in Sources */,

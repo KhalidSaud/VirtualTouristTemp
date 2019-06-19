@@ -18,12 +18,6 @@ class MapVC: UIViewController, MKMapViewDelegate, NSFetchedResultsControllerDele
         return DataController.dataController.viewContext
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        setupFetchController()
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupFetchController()
